@@ -59,6 +59,20 @@
 
         #endregion
 
+        #region Q4
+        static int sum(int num)
+        {
+            int sum = 0;
+            string numstr = num.ToString();
+            foreach (char Chardigit in numstr)
+            {
+                int intDigit = int.Parse(char.ToString(Chardigit));
+                sum += intDigit;
+            }
+            return sum;
+        }
+        #endregion
+
 
         static void Main(string[] args)
         {
@@ -122,6 +136,17 @@
             accept(num1, num2, num3, num4);
 
             #endregion
+
+            #region Q4
+            Console.Write("Enter a number: ");
+            int.TryParse(Console.ReadLine(), out int userNumber);
+
+            int result = sum(userNumber);
+            Console.WriteLine(result);
+            #endregion
+
+
+
         }
     }
 }
