@@ -270,6 +270,30 @@ namespace session4_C_
             Console.WriteLine($"Min : {min}");
             #endregion
 
+
+            #region 13- Write a program in C# Sharp to find the second largest element in an array.
+            int size;
+            bool flag;
+            //for taking the size of array without exceptions 
+            do
+            {
+                Console.WriteLine("Enter the size of array: ");
+                flag = int.TryParse(Console.ReadLine(), out size);
+            } while (flag == false);
+            int[] numbers = new int[size];
+            //for taking the  the elements Of array:
+            for (int i = 0; i < size; i++)
+            {
+                do
+                {
+                    Console.WriteLine("Enter the elements Of array: ");
+                    flag = int.TryParse(Console.ReadLine(), out numbers[i]);
+                } while (flag == false);
+            }
+            Array.Sort(numbers); //Asc sort
+            Array.Reverse(numbers);//Desc Sort
+            Console.WriteLine(numbers[1]);
+            #endregion
         }
     }
 }
