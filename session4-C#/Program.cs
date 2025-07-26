@@ -79,6 +79,20 @@
 
             #endregion
 
+            #region Q2
+            // 2- Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example.
+            //By Value Type
+            int[] Numbers = { 1, 2, 3 };
+            Console.WriteLine(SumArrayByValue(Numbers)); //60 he's cont the numbers in the function
+            Console.WriteLine(Numbers[0]); //1 : it's the same doesn't changed
+
+            Console.WriteLine("==============================");
+
+            //Passing By Refrence in Refrence Type : u sending the numbers
+            int[] Numbers02 = { 1, 2, 3 };
+            Console.WriteLine(SumArrayByRefrence(ref Numbers02)); //60
+            Console.WriteLine(Numbers02[0]); //10 this's changed 
+            #endregion
 
         }
     }
