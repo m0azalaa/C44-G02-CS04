@@ -85,6 +85,22 @@
         }
         #endregion
 
+        #region Q6 
+        static void MinMaxArray(int[] arr, ref int min, ref int max)
+        {
+            max = arr[0];
+            min = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > max) max = arr[i];
+                if (arr[i] < min) min = arr[i];
+            }
+            Console.WriteLine($"Max: {max}");
+            Console.WriteLine($"Min : {min}");
+        }
+        #endregion
+
+
 
 
         static void Main(string[] args)
@@ -163,6 +179,14 @@
             int.TryParse(Console.ReadLine(), out int number);
             Console.WriteLine(isprime(number));
             #endregion
+
+            #region Q6 
+            int[] nums = { 1, 2, 34, 4, 5, 77, 5, 10, 0, 3, 8 };
+
+            int min = 0, max = 0;
+            MinMaxArray(nums, ref min, ref max);
+            #endregion
+
 
 
 
