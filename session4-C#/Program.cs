@@ -73,6 +73,19 @@
         }
         #endregion
 
+        #region Q5 
+        static bool isprime(int input)
+        {
+            for (int i = 2; i <= input / 2; i++)
+            {
+                if (input % i == 0)
+                    return false;
+            }
+            return true;
+        }
+        #endregion
+
+
 
         static void Main(string[] args)
         {
@@ -144,6 +157,14 @@
             int result = sum(userNumber);
             Console.WriteLine(result);
             #endregion
+
+            #region Q5
+            Console.WriteLine("enter number: ");
+            int.TryParse(Console.ReadLine(), out int number);
+            Console.WriteLine(isprime(number));
+            #endregion
+
+
 
 
 
