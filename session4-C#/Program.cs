@@ -213,6 +213,11 @@ namespace session4_C_
             Factorial(nn);
             #endregion
 
+            #region Q8
+            ChangeChar(word:"this Word",n:'X',index:5);
+
+            #endregion
+
 
 
 
