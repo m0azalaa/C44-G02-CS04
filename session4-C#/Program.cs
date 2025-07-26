@@ -1,4 +1,6 @@
-﻿namespace session4_C_
+﻿using System.Text;
+
+namespace session4_C_
 {
     internal class Program
     {
@@ -100,7 +102,24 @@
         }
         #endregion
 
-
+        #region Q7
+        static void Factorial(int n)
+        {
+            int sumf = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                sumf *= i;
+                Console.Write($"{i}, ");
+            }
+            Console.WriteLine(sumf);
+        }
+        static void ChangeChar(string word, char n, int index)
+        {
+            StringBuilder newword = new StringBuilder(word);
+            newword[index] = n;
+            Console.WriteLine(newword);
+        }
+        #endregion
 
 
         static void Main(string[] args)
@@ -187,7 +206,12 @@
             MinMaxArray(nums, ref min, ref max);
             #endregion
 
+            #region Q7
 
+            Console.WriteLine("inter num: ");
+            int.TryParse(Console.ReadLine(), out int nn);
+            Factorial(nn);
+            #endregion
 
 
 
