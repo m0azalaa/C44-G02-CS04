@@ -48,6 +48,18 @@
         }
         #endregion
 
+        #region Q3
+        static void accept(int a, int b, int c, int d)
+        {
+            int sum = a + b;
+            int sub = c - d;
+            Console.WriteLine($"Sum : {sum}");
+            Console.WriteLine($"sub : {sub}");
+        }
+
+        #endregion
+
+
         static void Main(string[] args)
         {
             #region Q1
@@ -94,6 +106,22 @@
             Console.WriteLine(Numbers02[0]); //10 this's changed 
             #endregion
 
+            #region Q3
+            Console.Write("Enter first number: ");
+            int.TryParse(Console.ReadLine(), out int num1);
+
+            Console.Write("Enter second number: ");
+            int.TryParse(Console.ReadLine(), out int num2);
+
+            Console.Write("Enter third number: ");
+            int.TryParse(Console.ReadLine(), out int num3);
+
+            Console.Write("Enter fourth number: ");
+            int.TryParse(Console.ReadLine(), out int num4);
+
+            accept(num1, num2, num3, num4);
+
+            #endregion
         }
     }
 }
