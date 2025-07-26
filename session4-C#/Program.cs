@@ -218,6 +218,18 @@ namespace session4_C_
 
             #endregion
 
+            #region Q9
+            for (int j = 1; j <= 3; j++) //for colums
+            {
+                for (int i = 1; i <= 3; i++)
+                {
+                    if (j == i) Console.Write("1 "); // .Write > for making them in one line 0 0 0
+                    else Console.Write("0 ");                     //this forloop for the row 0 0 0 : we need to repeat this in 3 colums
+
+                }
+                Console.WriteLine(); //for making new line
+            }
+            #endregion
 
 
 
