@@ -231,6 +231,32 @@ namespace session4_C_
             }
             #endregion
 
+            #region Q10 Write a program in C# Sharp to find the sum of all elements of the  array.
+            bool flag;
+            int size;
+
+            do
+            {
+                Console.WriteLine("Enter the size of Array: ");
+                flag = int.TryParse(Console.ReadLine(), out size);
+            } while (flag == false || size < 1);
+
+            int[] numbers = new int[size];
+
+            for (int i = 0; i < size; i++)
+            {
+                Console.WriteLine("Enter the Elemnt of array: ");
+                flag = int.TryParse(Console.ReadLine(), out numbers[i]);
+            } while (flag == false) ;
+
+            int sum = 0;
+            for (int j = 0; j < size; j++)
+            {
+                sum += numbers[j];
+            }
+            Console.WriteLine(sum);
+            #endregion
+
 
 
         }
